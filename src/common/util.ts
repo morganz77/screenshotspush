@@ -6,6 +6,10 @@ function cleanupLogs(): void {
   if (fs.existsSync(ErrorLog)) fs.truncateSync(ErrorLog);
   if (fs.existsSync(OutputLog)) fs.truncateSync(OutputLog);
 }
+
+/**
+ * @deprecated Use Logger
+ */
 function log(
   msg: string,
   prefix: string = '[+]',
